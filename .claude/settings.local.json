@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(markitdown \"C:/Users/User/Downloads/Agro-Trust-360-Pitch.pptx\")",
+      "Bash(python3 -m markitdown \"C:/Users/User/Downloads/Agro-Trust-360-Pitch.pptx\")",
+      "Bash(python -m markitdown \"C:/Users/User/Downloads/Agro-Trust-360-Pitch.pptx\")",
+      "Bash(pip install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(/c/Users/User/AppData/Local/Programs/Python/Python310/python.exe -c ' *)",
+      "Bash(npm -v)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --use-npm)"
+    ]
+  }
+}
