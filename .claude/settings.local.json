@@ -8,7 +8,18 @@
       "Bash(python3 -c ' *)",
       "Bash(/c/Users/User/AppData/Local/Programs/Python/Python310/python.exe -c ' *)",
       "Bash(npm -v)",
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --use-npm)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --use-npm)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"D:/agro-360z/.claude\" 2>&1; ls \"D:/agro-360z/.claude\" 2>&1)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(npm run *)",
+      "Bash(npx --yes create-expo-app@latest agent-app --template blank-typescript)",
+      "Bash(npx --yes create-expo-app@latest . --template blank-typescript)",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Select-Object Id,Path\")",
+      "Bash(npx --yes create-expo-app@latest agent-app --template tabs)",
+      "Bash(npx expo *)",
+      "WebFetch(domain:docs.expo.dev)"
     ]
   }
 }

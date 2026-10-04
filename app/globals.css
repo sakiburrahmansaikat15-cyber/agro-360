@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f8f6;
+  --foreground: #14231a;
+
+  --color-brand-50: #eef8f1;
+  --color-brand-100: #d7eedd;
+  --color-brand-200: #b1ddbc;
+  --color-brand-300: #82c393;
+  --color-brand-400: #55a76e;
+  --color-brand-500: #368752;
+  --color-brand-600: #256b3f;
+  --color-brand-700: #1e5534;
+  --color-brand-800: #19432b;
+  --color-brand-900: #122e1e;
+  --color-brand-950: #081b11;
+
+  --color-teal-50: #eefbfa;
+  --color-teal-100: #d3f3f0;
+  --color-teal-200: #a9e7e2;
+  --color-teal-300: #72d3cc;
+  --color-teal-400: #3fb6b0;
+  --color-teal-500: #269894;
+  --color-teal-600: #1c7a78;
+  --color-teal-700: #1a6262;
+  --color-teal-800: #1a4f4f;
+  --color-teal-900: #194343;
+
+  --color-honey-50: #fdf6e9;
+  --color-honey-100: #f9e7c0;
+  --color-honey-200: #f3d08a;
+  --color-honey-300: #edb654;
+  --color-honey-400: #e8a01f;
+  --color-honey-500: #cf8712;
+  --color-honey-600: #a9680f;
+  --color-honey-700: #854f12;
+  --color-honey-800: #6e4114;
+  --color-honey-900: #5d3714;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
+
+  --color-teal-50: var(--color-teal-50);
+  --color-teal-100: var(--color-teal-100);
+  --color-teal-200: var(--color-teal-200);
+  --color-teal-300: var(--color-teal-300);
+  --color-teal-400: var(--color-teal-400);
+  --color-teal-500: var(--color-teal-500);
+  --color-teal-600: var(--color-teal-600);
+  --color-teal-700: var(--color-teal-700);
+  --color-teal-800: var(--color-teal-800);
+  --color-teal-900: var(--color-teal-900);
+
+  --color-honey-50: var(--color-honey-50);
+  --color-honey-100: var(--color-honey-100);
+  --color-honey-200: var(--color-honey-200);
+  --color-honey-300: var(--color-honey-300);
+  --color-honey-400: var(--color-honey-400);
+  --color-honey-500: var(--color-honey-500);
+  --color-honey-600: var(--color-honey-600);
+  --color-honey-700: var(--color-honey-700);
+  --color-honey-800: var(--color-honey-800);
+  --color-honey-900: var(--color-honey-900);
+
+  --font-sans: var(--font-inter), var(--font-noto-bengali), ui-sans-serif, system-ui, sans-serif;
+  --font-bn: var(--font-noto-bengali), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-300) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-300);
+  border-radius: 8px;
 }

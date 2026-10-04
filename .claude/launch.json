@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "agro-360-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "agent-app-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "agent-app", "run", "web", "--", "--port", "8082"],
+      "port": 8082
+    }
+  ]
+}

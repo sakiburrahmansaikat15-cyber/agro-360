@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Nested Expo app has its own toolchain — don't lint it from the web project.
+    "agent-app/**",
   ]),
 ]);
 
